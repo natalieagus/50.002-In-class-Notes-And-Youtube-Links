@@ -12,7 +12,7 @@ Sequential Logic -Timing Specs (Week 3_b): https://youtu.be/_qTTgelFAGY
 Sequential Logic - Registers (Week 3_c): https://youtu.be/X6kxFjAHkSw  
 FSM (Week 3_d): https://youtu.be/XJQaAG9xLoI  
 Synchronization (Week 3_e): https://youtu.be/eK4JCv1oADo   
-Programmable Machines (Week 4_a): https://youtu.be/-V-rpJonT8g  
+Programmable Machines (Week 4_a): https://youtu.be/p0plIDiBEj0 
 Instruction Set (Week 4_b): https://youtu.be/NLdUPdHBsxo  
 Machine Language (Week 4_c): https://youtu.be/ppYTQsHXVZU  
 Stack and Procedures (Week 5): https://youtu.be/vPDVkbzRRJE  

@@ -1,4 +1,7 @@
-Youtube links for pre-class videos:
+This repository contains the post-class version of our in-class notes. New notes will be uploaded as soon as the second lecture of the week ends. 
+
+
+Also, below is the Youtube links for our pre-class videos:
 
 Basics of Information (Week1_a): https://youtu.be/UPIoYYLG718  
 Digital Abstraction (Week1_b): https://youtu.be/3OoeuqWDhns  

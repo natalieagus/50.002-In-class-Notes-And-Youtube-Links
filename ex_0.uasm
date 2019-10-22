@@ -1,0 +1,29 @@
+.include beta.uasm
+
+PUSH(R1)
+PUSH(R2)
+
+CMOVE(numbers, R1) 
+CMOVE(2, R2)
+
+MULC(R2, 4, R2) 
+ADD(R1, R2, R2)
+LD(R2, 0, R1) 
+BEQ(R1, branch_true, R31)
+CMOVE(0, R0)
+ST(R0,answer)
+
+exit:
+POP(R2)
+POP(R1)
+HALT()
+
+branch_true: 
+CMOVE(1, R0)
+ST(R0, answer)
+BR(exit)
+
+answer : LONG(0)
+numbers: LONG(10)
+LONG(12)
+LONG(14)

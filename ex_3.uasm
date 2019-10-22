@@ -1,0 +1,57 @@
+.include beta.uasm
+.=0x00000000
+ALLOCATE(90)
+PUSH(R1)
+PUSH(R2)
+CMOVE(array, R1)
+CMOVE(3, R2)
+PUSH(R2)
+PUSH(R1)
+BR(sum_array, LP)
+DEALLOCATE(2)
+POP(R2)
+POP(R1)
+ST(R0, answer)
+DEALLOCATE(90)
+HALT()
+
+sum_array: PUSH(LP)
+PUSH(BP)
+MOVE(SP, BP)
+
+PUSH(R1)
+PUSH(R2)
+PUSH(R3)
+PUSH(R4)
+LD(BP,-12, R1)
+LD(BP,-16, R2)
+
+CMOVE(0, R3)
+CMOVE(0, R0)
+
+
+beginfor_loop: CMPEQ(R3, R2, R4)
+BEQ(R4, bodyfor_loop, LP)
+POP(R4)
+POP(R3)
+POP(R2)
+POP(R1)
+
+MOVE(BP, SP)
+POP(BP)
+POP(LP)
+JMP(LP)
+
+bodyfor_loop: MULC(R3, 4, R4)
+ADD(R1, R4, R4)
+LD(R4, 0, R4)
+ADD(R0, R4, R0)
+ADDC(R3, 1, R3)
+BR(beginfor_loop)
+
+answer : LONG(0)
+array: LONG(1)
+LONG(2)
+LONG(3)
+LONG(4)
+LONG(5)

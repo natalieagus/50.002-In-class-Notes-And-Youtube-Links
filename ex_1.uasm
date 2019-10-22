@@ -1,0 +1,60 @@
+.include beta.uasm
+
+
+res = 0x120
+. = 0x000
+ALLOCATE(90)
+
+PUSH(R1)
+PUSH(R2)
+CMOVE(2, R1)
+CMOVE(5, R2)
+PUSH(R2)
+PUSH(R1)
+BR(multiply, LP)
+DEALLOCATE(2)
+PUSH(R0)
+PUSH(R0)
+BR(add, LP)
+POP(R2)
+POP(R1)
+DEALLOCATE(2)
+DEALLOCATE(90)
+ST(R0, res)
+HALT()
+
+multiply: PUSH(LP)
+PUSH(BP)
+MOVE(SP, BP)
+
+PUSH(R3)
+PUSH(R4)
+LD(BP, -12, R3)
+LD(BP, -16, R4)
+MUL(R3, R4, R0)
+POP(R4)
+POP(R3)
+
+MOVE(BP, SP)
+POP(BP)
+POP(LP)
+JMP(LP)
+
+add: PUSH(LP)
+PUSH(BP)
+MOVE(SP, BP)
+
+PUSH(R3)
+PUSH(R4)
+LD(BP,-12, R3)
+LD(BP, -16, R4)
+ADD(R3, R4, R0)
+POP(R4)
+POP(R3)
+
+MOVE(BP, SP)
+POP(BP)
+POP(LP)
+JMP(LP)
+
+

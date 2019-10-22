@@ -1,0 +1,41 @@
+.include beta.uasm 
+
+answer = 0x104
+ALLOCATE(100)
+CMOVE(8,R1)
+CMOVE(0,R0)
+
+PUSH(R1)
+BR(floor_log, LP)
+DEALLOCATE(1)
+
+ST(R0, answer)
+DEALLOCATE(100)
+HALT()
+
+floor_log: PUSH(LP)
+PUSH(BP)
+MOVE(SP, BP)
+
+PUSH(R1)
+PUSH(R2)
+CMOVE(1,R2)
+LD(BP,-12,R1)
+CMPEQ(R1, R2, R2)
+BNE(R2, exit_sequence, R31)
+DIVC(R1, 2, R1)
+
+PUSH(R1)
+BR(floor_log, LP)
+DEALLOCATE(1)
+ADDC(R0, 1, R0) 
+
+
+exit_sequence:
+POP(R2)
+POP(R1)
+MOVE(BP, SP)
+POP(BP)
+POP(LP)
+JMP(LP)
+

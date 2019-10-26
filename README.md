@@ -15,7 +15,7 @@ Synchronization (Week 3_e): https://youtu.be/eK4JCv1oADo
 Programmable Machines (Week 4_a): https://youtu.be/p0plIDiBEj0 
 Instruction Set (Week 4_b): https://youtu.be/NLdUPdHBsxo  
 Machine Language (Week 4_c): https://youtu.be/ppYTQsHXVZU  
-Stack and Procedures (Week 5): https://youtu.be/vPDVkbzRRJE  
+Stack and Procedures (Week 5): https://youtu.be/sj7A-lpTgaI
 Beta Primer - Week 4 (supplementary) and Week 9: https://youtu.be/KTxbjm-Qm0c  
 The Beta Architecture (Week 9): https://youtu.be/2p85YZmLpFU  
 Memory Hierarchy (Week 10_a): https://youtu.be/bC_zOLltLbY  

@@ -17,7 +17,7 @@ Instruction Set (Week 4_b): https://youtu.be/NLdUPdHBsxo
 Machine Language (Week 4_c): https://youtu.be/ppYTQsHXVZU  
 Stack and Procedures (Week 5): https://youtu.be/sj7A-lpTgaI
 Beta Primer - Week 4 (supplementary) and Week 9: https://youtu.be/KTxbjm-Qm0c  
-The Beta Architecture (Week 9): https://youtu.be/7tWWiH3SqY8 
+The Beta Architecture (Week 9): https://youtu.be/IXiSoP_0Kvc  
 Memory Hierarchy (Week 10_a): https://youtu.be/bC_zOLltLbY  
 Cache (Week 10_b): https://youtu.be/33N7Y9Iydb0  
 Virtual Memory (Week 11_a): https://youtu.be/oe_WHpAmgqM  

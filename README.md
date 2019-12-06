@@ -24,3 +24,7 @@ Virtual Memory (Week 11_a): https://youtu.be/oe_WHpAmgqM
 Virtual Machine (Week 11_b): https://youtu.be/uG1HEKdJpxY  
 Devices and Interrupts (Week 13_a): https://youtu.be/8ZzGgrGK3PY  
 Synchronization and Semaphores (Week 13_b): https://youtu.be/iQcPXj-wsGs  
+
+Beta Datapath Analysis (Week 9 supplementary video): https://youtu.be/4MmUEeAKmxc
+Stack and Procedures Common Mistakes (Week 5 supplementary video): https://youtu.be/QGR9n9TqYc0
+
